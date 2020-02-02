@@ -13,3 +13,4 @@ export class BeerComponent implements OnInit {
   }
 
 }
+//lol
