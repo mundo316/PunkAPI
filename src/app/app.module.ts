@@ -4,15 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BeerComponent } from './beer/beer.component';
+import { HttpClient } from 'selenium-webdriver/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BeerComponent
+    BeerComponent,
+    HttpClient
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClient,
   ],
   providers: [],
   bootstrap: [AppComponent]
