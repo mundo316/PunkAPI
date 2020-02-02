@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { APIserviceService } from './services/apiservice.service';
+import { BeerService } from './services/beer.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PunkAPI';
+
+
+constructor(private APIservice: APIserviceService, private beerService: BeerService) {
+
+}
+
+
 }
